@@ -1,6 +1,4 @@
 @echo off
-echo Username: egold555
-echo Password: ericgolde555
 echo Adding...
 git add .
 echo Commiting...
