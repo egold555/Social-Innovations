@@ -1,8 +1,7 @@
 @echo off
 echo Adding...
 git add .
-echo Commiting...
-git commit -m "Auto update (FROM ATHLON)"
+git commit -m "Push from ATHLON"
 echo Pushing...
 git push
 echo Done!
