@@ -201,14 +201,14 @@ div#service-area-main {
   background-repeat: no-repeat;
 }*/
 .service  h1 {
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   text-shadow: 2px 2px #aaa;
   margin-bottom: 20px;
 }
 .service > p {
-    color: #fff;
-    font-size: 18px;
+    color: #000;
+    font-size: 32px;
 }
 /* End Services CSS */
 

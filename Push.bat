@@ -1,7 +1,7 @@
 @echo off
 echo Adding...
 git add .
-git commit -m "Added white line to seperate the 2 images"
+git commit -m "CSS"
 echo Pushing...
 git push
 echo Done!
