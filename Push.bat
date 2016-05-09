@@ -1,7 +1,7 @@
 @echo off
 echo Adding...
 git add .
-git commit -m "CSS"
+git commit -m "Added logo"
 echo Pushing...
 git push
 echo Done!
