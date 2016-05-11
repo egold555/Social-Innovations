@@ -1,7 +1,7 @@
 ﻿@echo off
 echo Adding...
 git add .
-git commit -m "Fixed all UTF-8 formatting conflictions with characters turning into the '�' character. Fixed all broken links and links opening in new tabs. Removed old unnessary files. (Except images)"
+git commit -m "Fixed colors (OCD) and fixed unnessary long redirect urls"
 echo Pushing...
 git push
 echo Done!
