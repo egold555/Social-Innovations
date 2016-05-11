@@ -1,7 +1,7 @@
 @echo off
 echo Adding...
 git add .
-git commit -m "Fixed colors (OCD) and fixed unnessary long redirect urls"
+git commit -m "push"
 echo Pushing...
 git push
 echo Done!
