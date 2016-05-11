@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 echo Adding...
 git add .
 git commit -m "Fixed colors (OCD) and fixed unnessary long redirect urls"
