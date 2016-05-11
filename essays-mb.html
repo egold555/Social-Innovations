@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Education for Inspiration Foundation Essays</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="single-page-nav sticky-wrapper" id="tmNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="external" target="_blank">Homepage</a></li>
+                    <li><a href="index.html" class="external" target="_blank">Homepage</a></li>
+                    <li><a href="http://web.golde.org/saas/english/Social-Innovations/essays-ea.html">Elsa's Essay</a></li>
+                    <li><a href="http://web.golde.org/saas/english/Social-Innovations/essays-mb.html">Madeline's Essay</a></li>
+                    <li><a href="http://web.golde.org/saas/english/Social-Innovations/essays-eg.html">Eric's Essay</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="essay1">
+        <section id="services-area" class="services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center inner our-service">
+                        <div class="service">
+                            <h1>(ESSAY TITLE)</h1>
+                            <br>
+                            <h3>By Madeline Byrne</h3>
+                            <br>
+                            <p>(ESSAY TEXT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="placeholder">
+            <section id="feature-area" class="about-section">
+                <!-- this is just a place holder. just puts a white line to seperate the 2 paralax images -->
+            </section>
+        </div>
+        <footer id="footer-area">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <div class="footer-content">
+                            <h1>Education for Inspiration Foundation</h1>
+                            <p>Helping educate the world on infectious diseases since 2016</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="copy">Copyright © 2016 Education for Inspiration Foundation. | Design By: Eric Golde & Madeline Byrne</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <!-- https://github.com/markgoodyear/scrollup -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+        <!-- https://github.com/ChrisWojcik/single-page-nav -->
+        <script src="js/parallax.js-1.3.1/parallax.js"></script>
+        <!-- http://pixelcog.github.io/parallax.js/ -->
+        <script>
+        // HTML document is loaded. DOM is ready.
+        $(function() {
+
+            // Parallax
+            $('.intro-section').parallax({
+                imageSrc: 'img/bg-1.jpg',
+                speed: 0.2
+            });
+            $('.services-section').parallax({
+                imageSrc: 'img/bg-2.jpg',
+                speed: 0.2
+            });
+            $('.contact-section').parallax({
+                imageSrc: 'img/bg-3.jpg',
+                speed: 0.2
+            });
+
+            // jQuery Scroll Up / Back To Top Image
+            $.scrollUp({
+                scrollName: 'scrollUp', // Element ID
+                scrollDistance: 300, // Distance from top/bottom before showing element (px)
+                scrollFrom: 'top', // 'top' or 'bottom'
+                scrollSpeed: 1000, // Speed back to top (ms)
+                easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+                animation: 'fade', // Fade, slide, none
+                animationSpeed: 300, // Animation speed (ms)                
+                scrollText: '', // Text for element, can contain HTML               
+                scrollImg: true // Set true to use image                
+            });
+
+            // ScrollUp Placement
+            $(window).on('scroll', function() {
+
+                // If the height of the document less the height of the document is the same as the
+                // distance the window has scrolled from the top...
+                if ($(document).height() - $(window).height() === $(window).scrollTop()) {
+
+                    // Adjust the scrollUp image so that it's a few pixels above the footer
+                    $('#scrollUp').css('bottom', '80px');
+
+                } else {
+                    // Otherwise, leave set it to its default value.
+                    $('#scrollUp').css('bottom', '30px');
+                }
+            });
+
+            $('.single-page-nav').singlePageNav({
+                offset: $('.single-page-nav').outerHeight(),
+                speed: 1500,
+                filter: ':not(.external)',
+                updateHash: true
+            });
+
+            $('.navbar-toggle').click(function() {
+                $('.single-page-nav').toggleClass('show');
+            });
+
+            $('.single-page-nav a').click(function() {
+                $('.single-page-nav').removeClass('show');
+            });
+
+        });
+        </script>
+</body>
+
+</html>
