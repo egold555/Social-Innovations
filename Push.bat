@@ -1,7 +1,7 @@
 @echo off
 echo Adding...
 git add .
-git commit -m "Added text to the website and other misc fixes."
+git commit -m "picture."
 echo Pushing...
 git push
 echo Done!
