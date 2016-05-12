@@ -1,7 +1,7 @@
 @echo off
 echo Adding...
 git add .
-git commit -m "picture."
+git commit -m "Stupid GIT"
 echo Pushing...
 git push
 echo Done!
