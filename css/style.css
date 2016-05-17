@@ -114,14 +114,14 @@ ul#menu {
 }
 
 .header-content h1 {
-    color: #00ABFF; /*#FFF*/
+    color: #ED6901; /*#FFF*/
     font-size: 70px;
     text-transform: uppercase;
     text-shadow: 2px 2px #000;
 }
 
 .header-content h4 {
-    color: #2B8436; /*#FFF*/
+    color: #2B5266; /*#FFF*/
     font-size: 25px;
     text-shadow: 1px 1px #333;
 }
