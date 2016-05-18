@@ -1,7 +1,7 @@
 @echo off
 echo Adding...
 git add .
-git commit -m "AutoPull every 10 sec"
+git commit -m "Added Maddy's essay"
 echo Pushing...
 git push
 echo Done!
