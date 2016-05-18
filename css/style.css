@@ -312,8 +312,8 @@ h2 {
 .testimonial-content {
     background-color: #f2f2f2;
     height: 300px;
-    max-width: 260px;
-    margin: 0 auto 30px;
+    max-width: 300px;
+    margin: 20px;
 }
 
 .testimonial-content p {
